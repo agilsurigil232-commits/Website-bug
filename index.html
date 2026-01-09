@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak Kami</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #111827;
+      padding: 24px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 22px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    button {
+      margin-top: 18px;
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: #22c55e;
+      color: #052e16;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #16a34a; }
+    .note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hubungi Kami</h1>
+
+    <!-- GANTI email@anda.com -->
+    <form action="mailto:email@anda.com" method="post" enctype="text/plain">
+      <label>Nama</label>
+      <input type="text" name="Nama" required />
+
+      <label>Email</label>
+      <input type="email" name="Email" required />
+
+      <label>Pesan</label>
+      <textarea name="Pesan" required></textarea>
+
+      <button type="submit">Kirim ke Email</button>
+    </form>
+
+    <div class="note">
+      Form ini mengirim pesan ke email secara legal.
+    </div>
+  </div>
+</body>
+</html>
